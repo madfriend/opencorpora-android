@@ -17,12 +17,7 @@
 		Alex Chuchunkov
     </author>
 
-    <platform name="android">
-        <icon src="touch-icons/android/icon-192x192.png" density="ldpi" />
-        <icon src="touch-icons/android/icon-192x192.png" density="mdpi" />
-        <icon src="touch-icons/android/icon-192x192.png" density="hdpi" />
-        <icon src="touch-icons/android/icon-192x192.png" density="xhdpi" />
-    </platform>
+    <icon src="touch-icons/android/icon-192x192.png" />
 
     <preference name="permissions" value="none"/>
 </widget>

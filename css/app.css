@@ -1,5 +1,5 @@
 .content {
-	margin-top: 30px;
+	margin-top: 10px;
 	width: 100%;
 	height: 100%;
 }
@@ -10,10 +10,6 @@
 
 .content {
 	padding: 0px 10px;
-}
-
-.index .bar-title h1 {
-	text-align: center;
 }
 
 .index .content h4 {

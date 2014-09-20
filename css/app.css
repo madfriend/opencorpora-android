@@ -44,3 +44,7 @@
 .ma_pools_complexity_4 {
     background-image: url("../img/icon_star_red.png");
 }
+
+.hidden {
+	display: none;
+}

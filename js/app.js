@@ -7,14 +7,18 @@ function init() {
 function onOnline() {
 	window.online = true;
 	$('.is-online').removeClass('hidden');
+	$('.btn-login').attr('disabled', false);
 }
 
 function onOffline() {
 	window.online = false;
 	$('.is-online').addClass('hidden');
+	$('.btn-login').attr('disabled', true);
+
 }
 
 function isLoggedIn() {
+	return true;
 	var token = window.localStorage.getItem("auth_token");
 	if (token) return true;
 }

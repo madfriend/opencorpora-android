@@ -22,12 +22,14 @@ function isLoggedIn() {
 }
 
 function onDeviceReady() {
-	document.addEventListener("online", onOnline, false);
+/*	document.addEventListener("online", onOnline, false);
     document.addEventListener("offline", onOffline, false);
 
 	if (checkConnection()) onOnline();
-	else onOffline();
+	else onOffline();*/
 
+	$('body').append(isLoggedIn(), $(body).hasClass('index'));
+	$('body').append(checkConnection());
 	if (isLoggedIn() && $('body').hasClass('index'))
 		window.location = "tasks.html";
 	elseif (!isLoggedIn() && !$('body').hasClass('index'))
@@ -63,7 +65,5 @@ function checkConnection() {
     states[Connection.CELL_4G]  = 'Cell 4G connection';
     states[Connection.NONE]     = 'No network connection';
 
-    alert('Connection type: ' + states[networkState]);
+    return states[networkState];
 }
-
-checkConnection();

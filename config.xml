@@ -21,7 +21,5 @@
 
     <preference name="permissions" value="none"/>
 
-    <feature name="NetworkStatus">
-        <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
-    </feature>
+    <gap:plugin name="org.apache.cordova.network-information" />
 </widget>

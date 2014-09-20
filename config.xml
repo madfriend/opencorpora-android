@@ -20,4 +20,8 @@
     <icon src="touch-icons/android/icon-192x192.png" />
 
     <preference name="permissions" value="none"/>
+
+    <feature name="NetworkStatus">
+        <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
+    </feature>
 </widget>

@@ -4,6 +4,18 @@
 	height: 100%;
 }
 
-.content form {
-	margin: 0px 10px;
+.index .content {
+	background-color: #2653a6;
+}
+
+.content {
+	padding: 0px 10px;
+}
+
+.index .bar-title h1 {
+	text-align: center;
+}
+
+.index .content h4 {
+	color: white;
 }

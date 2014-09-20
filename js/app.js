@@ -7,5 +7,5 @@ function isLoggedIn() {
 }
 
 function onDeviceReady() {
-	if (isLoggedIn()) window.location = "tasks.html";
+	if (isLoggedIn() && window.location == 'index.html') window.location = "tasks.html";
 }

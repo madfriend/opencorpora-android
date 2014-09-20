@@ -10,8 +10,37 @@
 
 .content {
 	padding: 0px 10px;
+	background-color: #fdfdfd;
 }
 
 .index .content h4 {
 	color: white;
+}
+
+/* from OC site */
+
+.ma_pools_complexity {
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-image: url("../img/icon_star_gray.png");
+    float: left;
+    margin-right: 10px;
+    cursor: help;
+}
+
+.ma_pools_complexity_1 {
+    background-image: url("../img/icon_star_green.png");
+}
+
+.ma_pools_complexity_2 {
+    background-image: url("../img/icon_star_yellow.png");
+}
+
+.ma_pools_complexity_3 {
+    background-image: url("../img/icon_star_orange.png");
+}
+
+.ma_pools_complexity_4 {
+    background-image: url("../img/icon_star_red.png");
 }

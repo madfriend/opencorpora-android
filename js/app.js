@@ -2,7 +2,10 @@ function init() {
 	document.addEventListener("deviceready", onDeviceReady, false);
 }
 
+function isLoggedIn() {
+	return true;
+}
 
 function onDeviceReady() {
-//	startRatchet();
+	if (isLoggedIn()) window.location = "/tasks.html";
 }

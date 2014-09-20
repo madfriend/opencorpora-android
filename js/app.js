@@ -30,8 +30,10 @@ function onDeviceReady() {
 
 	if (isLoggedIn() && $('body').hasClass('index'))
 		window.location = "tasks.html";
+	elseif (!isLoggedIn() && !$('body').hasClass('index'))
+		window.location = "index.html";
 }
-
+/*
 function checkConnection() {
     var networkState = navigator.connection.type;
 
@@ -47,3 +49,21 @@ function checkConnection() {
 
     return states[networkState];
 }
+*/
+
+function checkConnection() {
+    var networkState = navigator.connection.type;
+
+    var states = {};
+    states[Connection.UNKNOWN]  = 'Unknown connection';
+    states[Connection.ETHERNET] = 'Ethernet connection';
+    states[Connection.WIFI]     = 'WiFi connection';
+    states[Connection.CELL_2G]  = 'Cell 2G connection';
+    states[Connection.CELL_3G]  = 'Cell 3G connection';
+    states[Connection.CELL_4G]  = 'Cell 4G connection';
+    states[Connection.NONE]     = 'No network connection';
+
+    alert('Connection type: ' + states[networkState]);
+}
+
+checkConnection();
